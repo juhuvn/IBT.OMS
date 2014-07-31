@@ -81,7 +81,7 @@ class Major(models.Model):
     cv = models.ForeignKey(CV)
     major_vi = models.CharField(max_length=64)
     major_en = models.CharField(max_length=64)
-
+##asdasdasdad
 
 class Project(models.Model):
     cv = models.ForeignKey(CV)
