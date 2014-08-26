@@ -1,0 +1,15 @@
+<body>
+{% block content %}
+
+    <h1>{{ action }}</h1>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <div>
+            {{ form.as_p }}
+        </div>
+        <input type="submit" value="{{ action }}" class="submit" />
+    </form>
+
+{% endblock %}
+</body>
+</html>

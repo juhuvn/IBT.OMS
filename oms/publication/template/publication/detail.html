@@ -1,0 +1,23 @@
+<table>
+    <tr>
+    <tr>
+        <td><b>Tên công bố</b></td>
+        <td width="5%"></td>
+        <td>{{ publication.title }}</td>
+    </tr>
+    <tr>
+        <td><b>Tác giả</b></td>
+        <td width="5%"></td>
+        <td>{% for author in publication.author.all %}{{ author }}<br/>{% endfor %}</td>
+    </tr>
+
+    <tr>
+        <td><b>Loại</b></td>
+        <td width="5%"></td>
+        <td>{{publication.type}}</td>
+</table>
+{{ property.name }}acddddd
+<td>{% for name in publication.property.all %}{{ name }}<br/>{% endfor %}</td>
+<p><a href="{% url 'publication:update' publication.id %}">Update</a></p>
+
+
